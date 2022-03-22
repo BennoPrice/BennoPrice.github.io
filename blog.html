@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="https://github.com/bennoprice" target="_blank">Projects</a></li>
+                    <li><a href="blog.html" selected>Blog</a></li>
+                </ul>
+                <ul>
+                    <li><a href="logout.php" selected>Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="blog">
+            <div>
+                <h2><span class="highlight">{</span> Post <span class="highlight">}</span></h2>
+                <form method="post" action="post.php">
+                    <input type="text" name="title" placeholder="title">
+                    <textarea name="content" rows="6" cols="50" placeholder="..."></textarea>
+                    <button>post</button>
+                    <button type="reset">clear</button>
+                </form>
+
+                <hr>
+
+                <div id="post">
+                    <div>
+                        <span class="highlight">Hello World</span>
+                        <span class="fade">22/03/2022 08:53am</span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div id="post">
+                    <div>
+                        <span class="highlight">Hello Again</span>
+                        <span class="fade">22/03/2022 08:56am</span>
+                    </div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+                        eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <span>Copyright &copy; 2022 Ben Price</span>
+            </div>
+            <div>
+                <span class="highlight"><a href="https://www.linkedin.com/in/bennoprice/" target="_blank">LinkedIn</a></span>
+                <span class="highlight"><a href="mailto:ben.jules.price@gmail.com">Email</a></span>
+            </div>
+        </footer>
+    </body>
+</html>
